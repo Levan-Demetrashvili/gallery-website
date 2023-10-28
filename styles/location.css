@@ -1,0 +1,255 @@
+/*^ map   styles  */
+figure {
+margin-bottom: -3px;
+}
+figure .loc-btn-mask {
+
+    display: flex;
+    padding-inline: 156px;
+    position: absolute;
+    top: 0;
+}
+.tohome {
+    
+    cursor: pointer;
+}
+
+figure .map {
+    
+    width: 100%;
+}
+
+/***** main **********/
+main {
+    padding: 104px 165px 128px;
+    background: var(--black);
+}
+
+article {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+article h1  {
+
+    color: #fff;
+    font-size: var(--headingL);
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+.location-box h3  {
+
+    color: var(--brown);
+    font-size: var(--headingS);
+    font-weight: 900;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+ul li {
+
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    font-size: var(--bodyM);
+    font-weight: 300;
+    line-height: 32px;
+    
+    list-style-type: none;
+}
+.location-box  p {
+    font-size: var(--bodyM);
+    color: #fff;
+}
+.location-box ul {
+
+    margin-block:24px 32px ;
+} 
+
+/*** footer ***/
+
+footer {
+
+    background-color: var(--brown);
+}
+footer p {
+    color: var(--black);
+}
+
+svg path:hover  {
+    
+    fill: #fff;
+}
+/*^ animation **/
+
+figure .loc-btn-mask:hover .tohome {
+
+    background-color: var(--brown);
+}
+figure .loc-btn-mask:hover .arrow {
+
+    background-color: var(--black);
+}
+
+
+
+
+/*? media queries */ 
+
+/****for laptops ****/
+
+
+@media only screen and (max-width:1220px) {
+
+    figure .loc-btn-mask {
+        padding-inline: 80px;
+    }
+    
+    main,footer {
+        padding-inline: 80px;
+    }
+    footer p {
+        padding-inline: 50px 100px;
+    }
+} 
+
+
+
+/****for tablets ****/
+
+@media only screen and (max-width:768px) {
+
+  
+    figure .map {
+
+        display: none;
+    }
+    figure .map-tablet {
+
+        width: 100%;
+        display: block;
+        
+    }
+    figure .loc-btn-mask  {
+        padding-inline: 40px;
+    }
+
+    main {
+        padding: 88px 40px 80px;
+    }
+
+    article {
+
+        display: flex;
+        gap: 68px;
+    }
+    article h1 {
+
+        font-size: 55px;
+        line-height: 50px;
+    }
+
+    .location-box h3  {
+
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .location-box ul {
+
+        margin-block: 20px;
+    }
+
+    ul li {
+
+        font-size: var(--bodyS);
+        line-height: 28px;
+    }
+    .location-box  p {
+
+        font-size: var(--bodyS);
+        line-height: 28px;
+    }
+
+    footer {
+        padding: 56px 40px;
+    }
+
+
+    footer p {
+
+        font-size: 16px;
+        line-height: 26px;
+
+        padding-inline: 65px 133px;
+    }
+
+    footer .logo-dark {
+
+        display: none;
+    }
+    footer .logo-dark-Tablet {
+
+        display: block;
+    }
+} 
+
+
+@media only screen and (max-width:714px) {
+
+    footer p {
+
+        padding-inline: 35px 70px;
+    }
+} 
+@media only screen and (max-width:550px) {
+
+
+    figure .loc-btn-mask  {
+        
+        padding: 0;
+    }
+
+    figure .map-tablet {
+
+        display: none;
+    }
+
+    figure .map-mobile {
+        
+        width: 100%;
+        display: block;
+    }
+
+
+    main {
+
+        padding: 48px 16px 56px;
+    }
+
+    article {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    article h1 {
+
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    footer  {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        align-items: baseline;
+
+        padding: 48px 32px;
+
+    }
+
+    footer p {
+        padding:  0 ;
+    }
+} 
